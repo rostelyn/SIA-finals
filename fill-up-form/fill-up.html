@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eastwoods Food Reservation</title>
+    <link rel="stylesheet" href="fill-up-style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Reservation Details</h1>
+    </header>
+
+    <div class="background-image"></div>
+
+    <main>
+        <section id="reservation-form">
+            <h2>Please Enter Your Details</h2>
+            <form id="reservation-details">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="section">Section:</label>
+                    <input type="text" id="section" name="section" required>
+                </div>
+                <div class="form-group">
+                    <label for="school-id">School ID:</label>
+                    <input type="text" id="school-id" name="school-id" required>
+                </div>
+                <button type="submit" id="submit-reservation">Submit Reservation</button>
+               
+            </form>
+            <button id="back-home">Back to home screen</button>
+            <div id="confirmation" style="display: none;">
+                <p>Reservation Successful! <span class="check-mark">&#10004;</span></p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="reservation.js"></script>
+</body>
+
+</html>

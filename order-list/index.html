@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eastwoods Food Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Eastwoods Canteen Food Reservation</h1>
+    </header>
+
+    <div class="background-image"></div>
+
+    <main>
+        <section id="products">
+            <h2>Today's Menu</h2>
+            <div class="product" data-id="1" data-price="60">
+                <h3>Chicken Curry</h3>
+                <p>Price: ₱60.00</p>
+                <button class="add">+</button>
+                <button class="minus">-</button>
+            </div>
+            <div class="product" data-id="2" data-price="80">
+                <h3>Beef Steak</h3>
+                <p>Price: ₱80.00</p>
+                <button class="add">+</button>
+                <button class="minus">-</button>
+            </div>
+            <div class="product" data-id="3" data-price="70">
+                <h3>Kalderetang Manok</h3>
+                <p>Price: ₱70.00</p>
+                <button class="add">+</button>
+                <button class="minus">-</button>
+            </div>
+            <div class="product" data-id="4" data-price="80">
+                <h3>Munggo</h3>
+                <p>Price: ₱80.00</p>
+                <button class="add">+</button>
+                <button class="minus">-</button>
+            </div>
+            <div class="product" data-id="5" data-price="50">
+                <h3>Sinigang na Baboy</h3>
+                <p>Price: ₱50.00</p>
+                <button class="add">+</button>
+                <button class="minus">-</button>
+            </div>
+            <div class="product" data-id="6" data-price="50">
+                <h3>Menudo</h3>
+                <p>Price: ₱50.00</p>
+                <button class="add">+</button>
+                <button class="minus">-</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Order List:</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: ₱<span id="total-price">0.00</span></p>
+        </section>
+    </main>
+    <button class="confirm-button" id="confirm-order">Confirm Order</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
